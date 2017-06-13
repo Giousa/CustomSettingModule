@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Tw_Setting_Module</string>
+    <string name="setting_about">"关于"</string>
+    <string name="setting_title">"报告抬头修改"</string>
+    <string name="setting_logout">"退出登录"</string>
+    <string name="setting_password">"修改密码"</string>
+    <string name="setting_user">"用户信息编辑"</string>
 </resources>

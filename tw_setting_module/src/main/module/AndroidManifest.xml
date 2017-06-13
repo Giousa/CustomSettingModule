@@ -9,7 +9,7 @@
                   android:launchMode="singleTask"/>
         <activity android:name=".act.TwUserEditActivity"/>
         <activity android:name=".act.TwResetPasswordActivity"/>
-        <activity android:name=".act.TwLogoActivity"/>
+        <activity android:name=".act.TwTitleActivity"/>
         <activity android:name=".act.TwAboutActivity"/>
         <activity android:name=".act.TwLogOutActivity"/>
 

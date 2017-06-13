@@ -2,21 +2,24 @@ package com.tw.tw_setting_module.act;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.tw.tw_setting_module.R;
 import com.tw.tw_setting_module.base.TwBaseActivity;
 
 
-public class TwLogoActivity extends TwBaseActivity {
+public class TwTitleActivity extends TwBaseActivity {
 
 
     @Override
     protected int getLayoutId() {
-        return R.layout.tw_activity_setting_logo;
+        return R.layout.tw_activity_setting_title;
     }
 
     @Override
     protected void initView() {
+        TextView title = (TextView) findViewById(R.id.title_tv_content);
+        title.setText(R.string.setting_title);
         Button quit = (Button) findViewById(R.id.btn_quit);
 
         quit.setOnClickListener(new View.OnClickListener() {
