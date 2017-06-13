@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.tw.tw_setting_module.R;
+import com.zmm.tw_common_module.view.TwWaitDialog;
 
 /**
  * Description:
@@ -19,6 +20,7 @@ import com.tw.tw_setting_module.R;
 public abstract class TwBaseActivity extends AppCompatActivity {
 
     private ImageView mQuit;
+    private TwWaitDialog mWaitDialog;
 
 
     @Override
@@ -55,6 +57,25 @@ public abstract class TwBaseActivity extends AppCompatActivity {
                     finish();
                 }
             });
+        }
+    }
+
+    /**
+     * 开启进度条
+     */
+    protected void showDialog(String title) {
+        if (mWaitDialog.isShown()) {
+        } else {
+            mWaitDialog.show(title);
+        }
+    }
+
+    /**
+     * 隐藏进度条
+     */
+    protected void dismissDialog() {
+        if (mWaitDialog.isShown()){
+            mWaitDialog.dismiss();
         }
     }
 

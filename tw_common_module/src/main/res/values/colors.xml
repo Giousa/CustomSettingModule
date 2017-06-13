@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="red">#ff0000</color>
+    <color name="black">#000000</color>
+    <color name="white">#fff</color>
+
+    <color name="bg_splash">#65A8E8</color>
+    <color name="ssb_blue">#00acff</color>
+    <color name="ssb_blue_pressed">#00a1db</color>
+    <color name="ssb_blue_disabled">#559c9c9c</color>
+    <color name="bg_add_teatee_ll">#aa00ffff</color>
+    <color name="stroke">#cac7c7</color>
+    <color name="lable_blue">#3DB0FD</color>
+
+    <color name="text_color">#bcc2cf</color>
+    <color name="text_pressed">#ffffff</color>
+
+    <color name="round_corner_progress_bar_background_default">#5f5f5f</color>
+    <color name="round_corner_progress_bar_progress_default">#7f7f7f</color>
+    <color name="round_corner_progress_bar_secondary_progress_default">@android:color/transparent</color>
+
+    <color name="blue">#0c91f7</color>
+
+    <color name="line_blue">#5093e1</color>
+    <color name="line_orange">#f29600</color>
+    <color name="chart_text">#4c5362</color>
+
+    <color name="report_ground">#edeff5</color>
+
+    <color name="custom_line_left">#1DABDF</color>
+    <color name="custom_line_right">#F09000</color>
+    <color name="custom_line_limit">#F8A2B6</color>
+    <color name="custom_line_zero">#edeff5</color>
+
+</resources>

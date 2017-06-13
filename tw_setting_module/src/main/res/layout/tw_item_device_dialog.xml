@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@null"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tw_shape_corners_grey"
+        android:orientation="vertical"
+        android:padding="30px">
+
+        <TextView
+            android:id="@+id/pop_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50px"
+            android:text="重命名"
+            android:textColor="@color/chart_text"
+            android:textSize="36px"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_device_rename"
+            android:layout_width="600px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32px"
+            android:background="@drawable/tw_shape_corners_bg"
+            android:hint="请输入名称"
+            android:imeOptions="actionDone"
+            android:padding="20px"
+            android:singleLine="true"
+            android:textColor="@color/chart_text"
+            android:textSize="24px"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="50px"
+            android:background="@drawable/tw_shape_corners_grey">
+
+            <Button
+                android:id="@+id/btn_device_cancel"
+                android:layout_width="180px"
+                android:layout_height="48px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="131px"
+                android:background="@drawable/tw_shape_corners_bt"
+                android:text="取消"
+                android:textColor="#ffffff"
+                android:textSize="28px"/>
+
+            <Button
+                android:id="@+id/btn_device_confirm"
+                android:layout_width="180px"
+                android:layout_height="48px"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="131px"
+                android:background="@drawable/tw_shape_corners"
+                android:text="确定"
+                android:textColor="#ffffff"
+                android:textSize="28px"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

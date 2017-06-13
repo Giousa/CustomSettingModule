@@ -1,18 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:background="#edeff5"
+              android:orientation="vertical">
 
     <include layout="@layout/tw_activity_setting_common" />
-    <TextView
-        android:text="这是用户编辑界面"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240px">
+        <RelativeLayout
+            android:id="@+id/rl_user_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="950"
+            android:background="@drawable/tw_set_background_left_icon">
 
-    <Button
-        android:id="@+id/btn_quit"
-        android:text="回退"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+            <com.zmm.tw_common_module.view.TwSettingCircleImageView
+                android:id="@+id/user_icon"
+                android:layout_marginLeft="64px"
+                android:layout_width="104px"
+                android:layout_height="104px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/tw_set_home_pic_icon_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="204px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="设置头像"
+                android:textSize="36px"
+                android:textColor="#9da5be"/>
+
+            <ImageView
+                android:layout_width="27px"
+                android:layout_height="50px"
+                android:layout_marginRight="64px"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/tw_set_go_icon"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_username"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="950"
+            android:background="@drawable/tw_set_background_right_icon">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="64px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="修改昵称"
+                android:textSize="36px"
+                android:textColor="#9da5be"/>
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="139px"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:gravity="right"
+                android:text="张医师"
+                android:textSize="36px"
+                android:textColor="#5093e1"/>
+
+
+            <ImageView
+                android:layout_width="27px"
+                android:layout_height="50px"
+                android:layout_marginRight="64px"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/tw_set_go_icon"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
 </LinearLayout>

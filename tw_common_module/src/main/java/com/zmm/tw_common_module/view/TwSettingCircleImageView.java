@@ -1,4 +1,4 @@
-package com.tw.tw_setting_module.utils;
+package com.zmm.tw_common_module.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -16,13 +16,13 @@ import android.graphics.drawable.Drawable;
 import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 
-import com.tw.tw_setting_module.R;
+import com.zmm.tw_common_module.R;
 
 /**
  * Description:
  * Author:zhangmengmeng
- * Date:2017/6/8
- * Time:上午10:55
+ * Date:2017/6/13
+ * Time:下午1:58
  */
 
 public class TwSettingCircleImageView extends AppCompatImageView {

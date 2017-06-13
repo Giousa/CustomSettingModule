@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CustomProject.iml" filepath="$PROJECT_DIR$/CustomProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tw_common_module/tw_common_module.iml" filepath="$PROJECT_DIR$/tw_common_module/tw_common_module.iml" />
       <module fileurl="file://$PROJECT_DIR$/tw_setting_module/tw_setting_module.iml" filepath="$PROJECT_DIR$/tw_setting_module/tw_setting_module.iml" />
     </modules>
   </component>

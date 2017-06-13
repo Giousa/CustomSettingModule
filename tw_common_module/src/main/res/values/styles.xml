@@ -1,0 +1,109 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+    </style>
+
+    <style name="translucent_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--添加受测者 线性布局-->
+    <style name="AddTeateeInfoLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48px</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">32px</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <!--添加受测者* TextView-->
+    <style name="AddTeateeStarText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#f65177</item>
+        <item name="android:textSize">36px</item>
+    </style>
+    <!--添加受测者 TextView-->
+    <style name="AddTeateeInfoText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#9da5be</item>
+        <item name="android:textSize">36px</item>
+    </style>
+
+    <!--添加受测者 EditText-->
+    <style name="AddTeateeInfoEdit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:textColor">#4c5362</item>
+        <item name="android:textSize">28px</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+
+    <!--添加受测者 消息提醒-->
+    <style name="AddTeateeInfoPrompt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">32px</item>
+        <item name="android:layout_marginLeft">120px</item>
+        <item name="android:textSize">24px</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+
+    <!--添加受测者 自定义按钮-->
+    <style name="SwitchButtonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">100px</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:text">女</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">80px</item>
+        <item name="android:paddingLeft">80px</item>
+    </style>
+
+    <!-- 横线-->
+    <style name="stroke">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/stroke</item>
+    </style>
+
+    <style name="Choose_Dialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!--Dialog的windowFrame框为无-->
+        <item name="android:windowIsFloating">true</item> <!--是否漂现在activity上-->
+        <item name="android:windowIsTranslucent">false</item> <!--是否半透明-->
+        <item name="android:windowNoTitle">true</item> <!--除去title-->
+        <item name="android:backgroundDimEnabled">true</item> <!--是否允许对话框的背景变暗-->
+        <item name="android:windowBackground">@null</item> <!--除去背景色-->
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/common_push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/common_push_bottom_out</item>
+    </style>
+
+    <style name="activityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--将Activity的Theme设置成透明-->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+</resources>
