@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.tw.tw_setting_module">
+
+    <application android:allowBackup="true"
+                 android:label="@string/app_name"
+                 android:supportsRtl="true">
+
+        <activity android:name=".act.TwSettingActivity"
+                  android:launchMode="singleTask"/>
+        <activity android:name=".act.TwUserEditActivity"/>
+        <activity android:name=".act.TwResetPasswordActivity"/>
+        <activity android:name=".act.TwLogoActivity"/>
+        <activity android:name=".act.TwAboutActivity"/>
+        <activity android:name=".act.TwLogOutActivity"/>
+
+    </application>
+
+</manifest>

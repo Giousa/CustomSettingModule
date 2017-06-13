@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:background="#edeff5"
+              android:orientation="vertical"
+              android:splitMotionEvents="false">
+
+    <include layout="@layout/tw_activity_setting_common" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240px">
+        <RelativeLayout
+            android:id="@+id/rl_user_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="950"
+            android:background="@drawable/tw_setting_set_background_left_icon">
+
+            <ImageView
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginLeft="64px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/tw_setting_set_user_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="204px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="用户信息编辑"
+                android:textSize="36px"
+                android:textColor="#9da5be"/>
+
+            <ImageView
+                android:layout_width="27px"
+                android:layout_height="50px"
+                android:layout_marginRight="64px"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/tw_setting_set_go_icon"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_reset_password"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="950"
+            android:background="@drawable/tw_setting_set_background_right_icon">
+
+            <ImageView
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginLeft="64px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/tw_setting_set_password_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="204px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="修改密码"
+                android:textSize="36px"
+                android:textColor="#9da5be"/>
+
+            <ImageView
+                android:layout_width="27px"
+                android:layout_height="50px"
+                android:layout_marginRight="64px"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/tw_setting_set_go_icon"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240px"
+        android:layout_marginTop="20px">
+        <RelativeLayout
+            android:id="@+id/rl_report_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="950"
+            android:background="@drawable/tw_setting_set_background_left_icon">
+
+            <ImageView
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginLeft="64px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/tw_setting_set_report_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="204px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="报告抬头修改"
+                android:textSize="36px"
+                android:textColor="#9da5be"/>
+
+            <ImageView
+                android:layout_width="27px"
+                android:layout_height="50px"
+                android:layout_marginRight="64px"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/tw_setting_set_go_icon"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_about"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="950"
+            android:background="@drawable/tw_setting_set_background_right_icon">
+
+            <ImageView
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginLeft="64px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/tw_setting_set_about_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="204px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="关于"
+                android:textSize="36px"
+                android:textColor="#9da5be"/>
+
+            <ImageView
+                android:layout_width="27px"
+                android:layout_height="50px"
+                android:layout_marginRight="64px"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/tw_setting_set_go_icon"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240px"
+        android:layout_marginTop="20px">
+        <RelativeLayout
+            android:id="@+id/rl_logout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="950"
+            android:background="@drawable/tw_setting_set_background_left_icon">
+
+            <ImageView
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginLeft="64px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/tw_setting_set_quit_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="204px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="退出登录"
+                android:textSize="36px"
+                android:textColor="#9da5be"/>
+
+            <ImageView
+                android:layout_width="27px"
+                android:layout_height="50px"
+                android:layout_marginRight="64px"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/tw_setting_set_go_icon"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="950">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
