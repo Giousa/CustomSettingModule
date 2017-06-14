@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.tw.tw_setting_module.R;
-import com.zmm.tw_common_module.view.TwWaitDialog;
+import com.tw.tw_common_module.view.TwWaitDialog;
 
 /**
  * Description:

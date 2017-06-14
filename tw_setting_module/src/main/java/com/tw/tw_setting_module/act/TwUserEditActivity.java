@@ -28,11 +28,11 @@ import com.tw.tw_setting_module.base.TwBaseActivity;
 import com.tw.tw_setting_module.manager.IAccountManager;
 import com.tw.tw_setting_module.manager.RequestCallback;
 import com.tw.tw_setting_module.manager.impl.AccountManagerImpl;
-import com.zmm.tw_common_module.utils.CommonConfig;
-import com.zmm.tw_common_module.utils.SharedPreferencesUtil;
-import com.zmm.tw_common_module.utils.ToastUtils;
-import com.zmm.tw_common_module.view.TwChoosePicDialog;
-import com.zmm.tw_common_module.view.TwSettingCircleImageView;
+import com.tw.tw_common_module.utils.CommonConfig;
+import com.tw.tw_common_module.utils.SharedPreferencesUtil;
+import com.tw.tw_common_module.utils.ToastUtils;
+import com.tw.tw_common_module.view.TwChoosePicDialog;
+import com.tw.tw_common_module.view.TwSettingCircleImageView;
 
 import java.io.File;
 import java.io.FileNotFoundException;

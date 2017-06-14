@@ -17,7 +17,7 @@
             android:layout_weight="950"
             android:background="@drawable/tw_set_background_left_icon">
 
-            <com.zmm.tw_common_module.view.TwSettingCircleImageView
+            <com.tw.tw_common_module.view.TwSettingCircleImageView
                 android:id="@+id/user_icon"
                 android:layout_marginLeft="64px"
                 android:layout_width="104px"

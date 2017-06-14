@@ -10,9 +10,8 @@ import android.widget.TextView;
 
 import com.tw.tw_setting_module.R;
 import com.tw.tw_setting_module.base.TwBaseActivity;
-import com.zmm.tw_common_module.utils.CommonConfig;
-import com.zmm.tw_common_module.utils.SharedPreferencesUtil;
-import com.zmm.tw_common_module.utils.ToastUtils;
+import com.tw.tw_common_module.utils.CommonConfig;
+import com.tw.tw_common_module.utils.SharedPreferencesUtil;
 
 /**
  * Description:

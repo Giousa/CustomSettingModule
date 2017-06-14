@@ -23,3 +23,17 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+-optimizationpasses 5
+
+-dontusemixedcaseclassnames
+
+-dontskipnonpubliclibraryclasses
+
+-dontwarn android.support.**
+
+-keep class com.tw.tw_setting_module.dao.StartSettingModule {*;}
+
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}

@@ -1,1 +1,1 @@
-include ':app', ':tw_setting_module', ':tw_common_module'
+include ':app', ':tw_setting_module', ':tw_common_module', ':tw_ble2_module'

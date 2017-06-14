@@ -1,14 +1,12 @@
 package com.tw.tw_setting_module.act;
 
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.tw.tw_setting_module.R;
 import com.tw.tw_setting_module.base.TwBaseActivity;
-import com.zmm.tw_common_module.utils.ToastUtils;
+import com.tw.tw_common_module.utils.ToastUtils;
 
 
 public class TwAboutActivity extends TwBaseActivity {

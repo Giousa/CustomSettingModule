@@ -32,4 +32,6 @@ dependencies {
     compile 'com.alibaba:fastjson:1.2.31'
     compile 'com.alibaba:fastjson:1.1.56.android'
     compile 'com.squareup.okhttp3:okhttp:3.7.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+
 }

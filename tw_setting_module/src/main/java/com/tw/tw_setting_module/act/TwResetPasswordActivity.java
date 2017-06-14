@@ -16,11 +16,11 @@ import com.tw.tw_setting_module.base.TwBaseActivity;
 import com.tw.tw_setting_module.manager.IAccountManager;
 import com.tw.tw_setting_module.manager.RequestCallback;
 import com.tw.tw_setting_module.manager.impl.AccountManagerImpl;
-import com.zmm.tw_common_module.utils.CommonConfig;
-import com.zmm.tw_common_module.utils.DigestUtils;
-import com.zmm.tw_common_module.utils.LogUtils;
-import com.zmm.tw_common_module.utils.SharedPreferencesUtil;
-import com.zmm.tw_common_module.utils.ToastUtils;
+import com.tw.tw_common_module.utils.CommonConfig;
+import com.tw.tw_common_module.utils.DigestUtils;
+import com.tw.tw_common_module.utils.LogUtils;
+import com.tw.tw_common_module.utils.SharedPreferencesUtil;
+import com.tw.tw_common_module.utils.ToastUtils;
 
 
 public class TwResetPasswordActivity extends TwBaseActivity {
