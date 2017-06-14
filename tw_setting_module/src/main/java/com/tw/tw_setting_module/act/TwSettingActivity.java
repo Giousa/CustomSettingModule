@@ -12,6 +12,7 @@ import com.tw.tw_setting_module.R;
 import com.tw.tw_setting_module.base.TwBaseActivity;
 import com.zmm.tw_common_module.utils.CommonConfig;
 import com.zmm.tw_common_module.utils.SharedPreferencesUtil;
+import com.zmm.tw_common_module.utils.ToastUtils;
 
 /**
  * Description:
@@ -112,7 +113,7 @@ public class TwSettingActivity extends TwBaseActivity {
                 SharedPreferencesUtil.saveBoolean(getApplicationContext(),CommonConfig.LOGIN, false);
                 //TODO 退出操作
 //                startActivity(LoginActivity.class, true);
-
+                finish();
             }
         });
 

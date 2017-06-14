@@ -88,12 +88,12 @@ public class TwUserEditActivity extends TwBaseActivity {
 
         if(TextUtils.isEmpty(SharedPreferencesUtil.getString(mContext, userId+"head","")))
         {
-            Glide.with(mContext).load(R.drawable.tw_set_home_pic_icon_n).into(this.userIcon);
+            Glide.with(mContext).load(R.drawable.tw_set_home_pic_icon_n).into(userIcon);
         }
         else
         {
             File file = new File(SharedPreferencesUtil.getString(mContext,userId+"head",""));
-            Glide.with(mContext).load(file).into(this.userIcon);
+            Glide.with(mContext).load(file).into(userIcon);
         }
 
         mUsername.setText(SharedPreferencesUtil.getString(mContext,userId+"name",""));
