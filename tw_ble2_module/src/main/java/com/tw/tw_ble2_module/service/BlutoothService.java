@@ -31,7 +31,7 @@ import java.util.Arrays;
 import java.util.Date;
 
 /**
- * Description:
+ * Description: 蓝牙模块，在开启服务前，要确保蓝牙已经打开
  * Author:zhangmengmeng
  * Date:2017/3/29
  * Time:下午5:53
@@ -115,10 +115,10 @@ public class BlutoothService extends Service implements BluetoothChatService.OnR
                 }
             }.start();
 
-//            if(mBleNameLeft != null && mBleNameRight != null){
-//                initBluetoothData();
-//                handler.postDelayed(runnable, 2000);
-//            }
+            if(mBleNameLeft != null && mBleNameRight != null){
+                initBluetoothData();
+                handler.postDelayed(runnable, 2000);
+            }
 
             isFirst = true;
         }
@@ -341,13 +341,13 @@ public class BlutoothService extends Service implements BluetoothChatService.OnR
             mCountDownTimer.cancel();
         }
         // Unregister broadcast listeners
-//        try {
-//            if(mReceiver != null){
-//                unregisterReceiver(mReceiver);
-//            }
-//        }catch (Exception e){
-//            e.printStackTrace();
-//        }
+        try {
+            if(mReceiver != null){
+                unregisterReceiver(mReceiver);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         handler.removeCallbacks(runnable);
         if (mChatServiceLeft != null) mChatServiceLeft.stop();
         if (mChatServiceRight != null) mChatServiceRight.stop();
