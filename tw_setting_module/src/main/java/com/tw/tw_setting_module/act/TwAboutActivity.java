@@ -2,14 +2,19 @@ package com.tw.tw_setting_module.act;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.tw.tw_setting_module.R;
 import com.tw.tw_setting_module.base.TwBaseActivity;
+import com.zmm.tw_common_module.utils.ToastUtils;
 
 
 public class TwAboutActivity extends TwBaseActivity {
 
+
+    private RelativeLayout mRelCheckUpdate;
 
     @Override
     protected int getLayoutId() {
@@ -21,18 +26,16 @@ public class TwAboutActivity extends TwBaseActivity {
         TextView title = (TextView) findViewById(R.id.title_tv_content);
         title.setText(R.string.setting_about);
 
-        Button quit = (Button) findViewById(R.id.btn_quit);
-
-        quit.setOnClickListener(new View.OnClickListener() {
+        mRelCheckUpdate = (RelativeLayout) findViewById(R.id.rl_check_update);
+        mRelCheckUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(TwSettingActivity.class,true);
+                ToastUtils.SimpleToast(getApplicationContext(),"当前已是最新版本");
             }
         });
     }
 
     @Override
     protected void initData() {
-
     }
 }

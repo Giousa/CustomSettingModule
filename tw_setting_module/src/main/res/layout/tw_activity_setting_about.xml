@@ -6,14 +6,58 @@
 
     <include layout="@layout/tw_activity_setting_common" />
 
-    <TextView
-        android:text="这是关于界面"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_gravity="center"
+        android:layout_marginTop="108px"
+        android:src="@drawable/tw_about_logo" />
 
-    <Button
-        android:id="@+id/btn_quit"
-        android:text="回退"
+    <TextView
+        android:id="@+id/tv_about_version"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40px"
+        android:text="版本号：V1.0.0"
+        android:textColor="#9da5be"
+        android:textSize="32px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40px"
+        android:text="开发商：上海市共进医疗科技有限公司"
+        android:textColor="#9da5be"
+        android:textSize="32px" />
+
+    <RelativeLayout
+        android:id="@+id/rl_check_update"
+        android:layout_width="520px"
+        android:layout_height="80px"
+        android:layout_gravity="center"
+        android:layout_marginTop="120px"
+        android:background="@drawable/tw_shape_rectangle_stroke">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16px"
+            android:layout_alignParentLeft="true"
+            android:text="检查更新"
+            android:textColor="#9da5be"
+            android:textSize="32px" />
+
+        <ImageView
+            android:layout_width="15px"
+            android:layout_height="26px"
+            android:layout_marginRight="16px"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/tw_about_go_icon" />
+
+
+    </RelativeLayout>
 </LinearLayout>

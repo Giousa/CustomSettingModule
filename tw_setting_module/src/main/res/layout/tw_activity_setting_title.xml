@@ -2,18 +2,118 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              android:background="#edeff5"
+              android:fitsSystemWindows="true">
 
     <include layout="@layout/tw_activity_setting_common" />
 
-    <TextView
-        android:text="这是抬头修改界面"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240px">
 
-    <Button
-        android:id="@+id/btn_quit"
-        android:text="回退"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:id="@+id/rl_username"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="950"
+            android:background="@drawable/tw_set_background_left_icon">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="64px"
+                android:text="设置抬头名称"
+                android:textColor="#9da5be"
+                android:textSize="36px" />
+
+            <ImageView
+                android:layout_width="27px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="64px"
+                android:src="@drawable/tw_set_go_icon" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"></LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_user_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="950"
+            android:background="@drawable/tw_set_background_right_icon">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="64px"
+                android:text="修改抬头图片"
+                android:textColor="#9da5be"
+                android:textSize="36px" />
+
+
+            <ImageView
+                android:layout_width="27px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="64px"
+                android:src="@drawable/tw_set_go_icon" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="1242px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="88px"
+        android:paddingLeft="42px"
+        android:text="效果预览"
+        android:textColor="#9da5be"
+        android:textSize="36px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="564px">
+
+        <ImageView
+            android:layout_width="1242px"
+            android:layout_height="564px"
+            android:layout_centerInParent="true"
+            android:src="@drawable/tw_report_edit_background_pic"/>
+
+        <TextView
+            android:id="@+id/tv_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75px"
+            android:layout_centerHorizontal="true"
+            android:text="步态评估报告"
+            android:textColor="#4c5362"
+            android:textSize="40px"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_spilt"
+            android:layout_width="34px"
+            android:layout_toRightOf="@+id/tv_header_title"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/iv_header_logo"
+            android:layout_width="108px"
+            android:layout_height="72px"
+            android:layout_marginTop="57px"
+            android:layout_toRightOf="@+id/tv_spilt"/>
+    </RelativeLayout>
 </LinearLayout>

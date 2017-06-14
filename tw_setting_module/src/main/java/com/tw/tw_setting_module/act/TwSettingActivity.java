@@ -1,11 +1,17 @@
 package com.tw.tw_setting_module.act;
 
+import android.app.AlertDialog;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.tw.tw_setting_module.R;
 import com.tw.tw_setting_module.base.TwBaseActivity;
+import com.zmm.tw_common_module.utils.CommonConfig;
+import com.zmm.tw_common_module.utils.SharedPreferencesUtil;
 
 /**
  * Description:
@@ -19,6 +25,7 @@ public class TwSettingActivity extends TwBaseActivity {
     private final String TAG = TwSettingActivity.class.getSimpleName();
     private RelativeLayout mUserEdit,mResetPassword,mReportTitle,mAbout,mLogout;
     private ImageView mTitleQuit;
+    private AlertDialog mQuitDialog;
 
 
     @Override
@@ -62,7 +69,8 @@ public class TwSettingActivity extends TwBaseActivity {
         mLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(TwLogOutActivity.class,false);
+//                startActivity(TwLogOutActivity.class,false);
+                quitDialog();
             }
         });
 
@@ -76,6 +84,47 @@ public class TwSettingActivity extends TwBaseActivity {
 
     @Override
     protected void initData() {
+
+    }
+
+    private void quitDialog() {
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(false);
+        View viewDialog = View.inflate(this, R.layout.item_quit_dialog, null);
+        TextView content = (TextView) viewDialog.findViewById(R.id.dialog_content);
+        content.setText("是否退出登陆?");
+        Button cancel = (Button) viewDialog.findViewById(R.id.dialog_cancel);
+        Button confirm = (Button) viewDialog.findViewById(R.id.dialog_confirm);
+
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mQuitDialog.dismiss();
+
+            }
+        });
+
+        confirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mQuitDialog.dismiss();
+                SharedPreferencesUtil.saveBoolean(getApplicationContext(),CommonConfig.LOGIN, false);
+                //TODO 退出操作
+//                startActivity(LoginActivity.class, true);
+
+            }
+        });
+
+        builder.setView(viewDialog);
+        mQuitDialog = builder.create();
+        mQuitDialog.setCanceledOnTouchOutside(false);
+        mQuitDialog.show();
+        WindowManager.LayoutParams params = mQuitDialog.getWindow().getAttributes();
+        params.width = 700;
+        params.height = 300;
+        mQuitDialog.getWindow().setBackgroundDrawableResource(R.drawable.tw_shape_corners_grey);
+        mQuitDialog.getWindow().setAttributes(params);
 
     }
 }
