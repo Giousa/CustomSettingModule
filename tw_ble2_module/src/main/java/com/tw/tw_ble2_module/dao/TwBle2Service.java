@@ -13,7 +13,7 @@ import com.tw.tw_common_module.utils.CommonConfig;
  * Time:下午4:43
  */
 
-public class StartBle2Module {
+public class TwBle2Service {
 
     public static void start(Context context,String nameLeft, String addressLeft, String nameRight, String addressRight){
         Intent startIntent = new Intent(context, BlutoothService.class);

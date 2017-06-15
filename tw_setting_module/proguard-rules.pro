@@ -32,7 +32,7 @@
 
 -dontwarn android.support.**
 
--keep class com.tw.tw_setting_module.dao.StartSettingModule {*;}
+-keep class com.tw.tw_setting_module.dao.TwSettingModule {*;}
 
 -keepclassmembers class **.R$* {
     public static <fields>;

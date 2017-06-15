@@ -35,5 +35,24 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="107dp"/>
 
+    <Button
+        android:id="@+id/btn_start_collecting"
+        android:text="开始发送数据"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_start"
+        android:layout_alignBottom="@+id/btn_start"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="70dp"/>
+
+    <Button
+        android:id="@+id/btn_stop_collecting"
+        android:text="停止发送数据"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_stop"
+        android:layout_alignBottom="@+id/btn_stop"
+        android:layout_alignStart="@+id/btn_start_collecting"/>
+
 
 </RelativeLayout>

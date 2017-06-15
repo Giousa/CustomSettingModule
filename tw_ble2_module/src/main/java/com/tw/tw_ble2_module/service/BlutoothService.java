@@ -20,6 +20,7 @@ import com.tw.tw_common_module.event.BluetoothStatusEvent;
 import com.tw.tw_common_module.event.BluetoothWriteEvent;
 import com.tw.tw_common_module.utils.CommonConfig;
 import com.tw.tw_common_module.utils.LogUtils;
+import com.tw.tw_common_module.utils.ToastUtils;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -152,6 +153,15 @@ public class BlutoothService extends Service implements BluetoothChatService.OnR
     private void initBluetooth() {
 
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+
+        if (mBluetoothAdapter == null) {
+            ToastUtils.SimpleToast(getApplicationContext(),"蓝牙不支持");
+            return;
+        }
+        if (!mBluetoothAdapter.isEnabled()) {
+            ToastUtils.SimpleToast(getApplicationContext(),"蓝牙未开启");
+            return;
+        }
 
         if (mChatServiceLeft == null) {
             mChatServiceLeft = new BluetoothChatService();

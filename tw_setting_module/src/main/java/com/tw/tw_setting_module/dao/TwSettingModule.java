@@ -12,7 +12,7 @@ import com.tw.tw_setting_module.act.TwSettingActivity;
  * Time:下午1:44
  */
 
-public class StartSettingModule {
+public class TwSettingModule {
 
     public static void execute(Context context){
         Intent intent = new Intent(context, TwSettingActivity.class);
