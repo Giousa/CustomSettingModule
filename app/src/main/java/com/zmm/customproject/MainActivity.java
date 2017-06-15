@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.alibaba.fastjson.JSON;
 import com.tw.tw_ble2_module.dao.TwBle2Manager;
 import com.tw.tw_ble2_module.dao.TwBle2Service;
+import com.tw.tw_common_module.event.BluetoothQueryEvent;
 import com.tw.tw_common_module.event.BluetoothReadEvent;
 import com.tw.tw_common_module.event.BluetoothStatusEvent;
 import com.tw.tw_common_module.utils.LogUtils;
@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         Button stop = (Button) findViewById(R.id.btn_stop);
         Button startCollecting = (Button) findViewById(R.id.btn_start_collecting);
         Button stopCollecting = (Button) findViewById(R.id.btn_stop_collecting);
+        Button startQuery = (Button) findViewById(R.id.btn_start_query);
+        Button stopQuery = (Button) findViewById(R.id.btn_stop_query);
 
         setting.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,8 +84,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        startQuery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LogUtils.d("startQuery-----------------");
+                TwBle2Service.startQuery(getApplicationContext());
+            }
+        });
+
+
+        stopQuery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TwBle2Service.stopQuery(getApplicationContext());
+            }
+        });
+
     }
 
+    /**
+     * 蓝牙连接状态
+     * @param event
+     */
     @Subscribe
     public void onEventMainThread(BluetoothStatusEvent event) {
         LogUtils.d("onEventMainThread:state = " + event.getState() + "    device = " + event.getDevice());
@@ -115,6 +137,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * 蓝牙数据
+     * @param event
+     */
     @Subscribe
     public void onEventMainThread(final BluetoothReadEvent event) {
 
@@ -210,5 +236,15 @@ public class MainActivity extends AppCompatActivity {
     private float dataCol(int i, int y) {
 
         return (i * 256 + y) > 32767 ? (i * 256 + y - 65536) : (i * 256 + y);
+    }
+
+
+    /**
+     * 查询蓝牙
+     * @param event
+     */
+    @Subscribe
+    public void onEventMainThread(final BluetoothQueryEvent event) {
+        LogUtils.d("name = "+event.getName()+",address = "+event.getAddress());
     }
 }

@@ -3,6 +3,7 @@ package com.tw.tw_ble2_module.dao;
 import android.content.Context;
 import android.content.Intent;
 
+import com.tw.tw_ble2_module.service.BlutoothQueryService;
 import com.tw.tw_ble2_module.service.BlutoothService;
 import com.tw.tw_common_module.utils.CommonConfig;
 
@@ -26,6 +27,16 @@ public class TwBle2Service {
 
     public static void stop(Context context){
         Intent stopIntent = new Intent(context, BlutoothService.class);
+        context.stopService(stopIntent);
+    }
+
+    public static void startQuery(Context context){
+        Intent startIntent = new Intent(context, BlutoothQueryService.class);
+        context.startService(startIntent);
+    }
+
+    public static void stopQuery(Context context){
+        Intent stopIntent = new Intent(context, BlutoothQueryService.class);
         context.stopService(stopIntent);
     }
 }
